@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanatan Rashtra Shankhnad Mahotsav</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!-- linking style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- linking script -->
+  <script src="script.js"></script>
+</head>
+
+<body class="bg-white">
+  <!-- Sticky Donate Button -->
+  <div class="sticky-donate hidden md:block">
+    <a href="#donate" style="background-color: red;"
+      class="bg-primary text-white font-semibold px-6 py-3 !rounded-button shadow-lg hover:shadow-xl transition-all flex items-center whitespace-nowrap">
+      <div class="w-7 h-8 flex items-center justify-center mr-2">
+        <i class="ri-heart-fill"></i>
+      </div>
+      DONATE NOW
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-md py-4 px-6 md:px-12 flex items-center justify-between shadow-sm fixed w-full z-50"
+  style="background-color: rgba(235, 216, 196, 0.9);">
+  <div class="flex items-center">
+    <!-- Logo -->
+    <img src="photos/IMAGES-16.png" alt="Your Logo" class="h-12 md:h-20 mr-10">
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex ml-13 space-x-9">
+      <a href="#home" class="text-gray-700 hover:text-primary transition-colors"
+        style="color: black; font-size: 20px;">Home</a>
+      <a href="#devji" class="text-gray-700 hover:text-primary transition-colors"
+        style="color: black; font-size: 20px;">Gurudevji</a>
+      <a href="#guest" class="text-gray-700 hover:text-primary transition-colors"
+        style="color: black; font-size: 20px;">Distinguished Guests</a>
+      <a href="#media1" class="text-gray-700 hover:text-primary transition-colors"
+        style="color: black; font-size: 20px;">Media</a>
+    </div>
+  </div>
+
+  <!-- Hamburger Icon (Mobile) -->
+  <div class="md:hidden">
+    <button id="menuToggle" class="focus:outline-none">
+      <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="md:hidden fixed top-20 left-0 w-full bg-[#ebd8c4] backdrop-blur-md shadow-md hidden z-40">
+  <div class="flex flex-col items-center py-4 space-y-4">
+    <a href="#home1" class="text-black text-lg" onclick="toggleMenu()">Home</a>
+    <a href="#devji1" class="text-black text-lg" onclick="toggleMenu()">Gurudevji</a>
+    <a href="#guest" class="text-black text-lg" onclick="toggleMenu()">Distinguished Guests</a>
+    <a href="#media" class="text-black text-lg" onclick="toggleMenu()">Media</a>
+  </div>
+</div>
+
+<script>
+  // Toggle Mobile Menu
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+  }
+
+  menuToggle.addEventListener('click', toggleMenu);
+</script>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 hidden sm:block" id="home">
+    <!-- 🔹 Video Background -->
+    <video autoplay muted loop playsinline class="absolute top-20 left-0 w-full h-[calc(100vh-5rem)] object-cover z-0">
+      <source src="vedio/WhatsApp Video 2025-05-08 at 8.07.02 AM.mp4" type="video/mp4" />
+    </video>
+
+    <!-- 🔹 Foreground Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center text-white relative z-10">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- 🔹 Logo -->
+        <div class="flex justify-center" id="home">
+          <div class="w-40 h-40 sm:w-52 sm:h-52 rounded-full overflow-hidden flex items-center justify-center relative">
+            <img src="photos/IMAGES-16.png" alt="Logo" class="relative z-10 w-full h-full object-contain">
+          </div>
+        </div>
+
+        <!-- 🔹 Headings -->
+        <h1 class="text-4xl md:text-5xl font-bold " style="
+          color: #142baf; 
+          font-family: 'Poppins', Arial, sans-serif; 
+          font-size: 4rem; 
+          text-shadow: 
+            -1px -1px 0 #FFD700, 
+             1px -1px 0 #FFD700, 
+            -1px  1px 0 #FFD700, 
+             1px  1px 0 #FFD700;
+        ">
+          Sanatan Rashtra
+        </h1>
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-2" style="
+      color: #c8252c;
+      font-family: 'Poppins', Arial, sans-serif; 
+      font-size: 3.8rem; ">
+
+          Shankhnad Mahotsav
+        </h1>
+
+        <!-- 🔹 Orange Line -->
+        <div class="mx-auto my-2" style="height: 2px; width: 80%; max-width: 750px; background-color: #fb923c;"></div>
+        <p class="font-medium" style="font-size: 33px; font-weight: bold; color:#283cb1; font-family: 'Poppins', Arial, sans-serif; text-shadow: 
+          -1px -1px 0 #FFD700, 
+           1px -1px 0 #FFD700, 
+          -1px  1px 0 #FFD700, 
+           1px  1px 0 #FFD700;
+      ">
+          17<sup>th</sup> to 19<sup>th</sup> May 2025 | Farmagudi, Ponda, Goa
+        </p>
+        <div class="mx-auto my-4" style="height: 2px; width: 80%; max-width: 750px; background-color: #fb923c;"></div>
+        <!-- 🔹 Button -->
+        <br><br>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+          <a href="#donate"
+            class="bg-primary text-white font-semibold px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded shadow-lg hover:shadow-xl transition-all whitespace-nowrap text-base sm:text-lg"
+            style="background-color: red;">
+            DONATE NOW
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="relative min-h-screen flex items-center justify-center pt-20 sm:hidden" id="home1">
+    <!-- 🔹 Video Background -->
+    <video autoplay muted loop playsinline class="absolute top-20 left-0 w-full h-[calc(100vh-5rem)] object-cover z-0">
+      <source src="vedio/WhatsApp Video 2025-05-08 at 8.07.02 AM.mp4" type="video/mp4" />
+    </video>
+
+    <!-- 🔹 Foreground Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 text-center text-white relative z-10">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- 🔹 Logo -->
+        <div class="flex justify-center">
+          <div class="w-32 h-32 sm:w-52 sm:h-52 rounded-full overflow-hidden flex items-center justify-center relative">
+            <img src="photos/IMAGES-16.png" alt="Logo" class="relative z-10 w-full h-full object-contain">
+          </div>
+        </div>
+
+        <!-- 🔹 Headings -->
+        <h1 class="text-3xl md:text-5xl font-bold mt-4" style="
+          color: #142baf; 
+          font-family: 'Poppins', Arial, sans-serif;  font-size: 39px;
+          text-shadow: 
+            -1px -1px 0 #FFD700, 
+             1px -1px 0 #FFD700, 
+            -1px  1px 0 #FFD700, 
+             1px  1px 0 #FFD700;
+        ">
+          Sanatan Rashtra
+        </h1>
+
+        <h1 class="text-2xl md:text-5xl font-bold mb-2" style="
+      color: #c8252c;
+      font-family: 'Poppins', Arial, sans-serif; font-size: 34px;">
+          Shankhnad Mahotsav
+        </h1>
+
+        <!-- 🔹 Orange Line -->
+        <div class="mx-auto my-2" style="height: 1px; width: 90%; max-width: 740px; background-color: #fb923c;"></div>
+        <p class="font-medium text-xl md:text-3xl" style="font-weight: bold; color:#283cb1; font-size: 17px; font-family: 'Poppins', Arial, sans-serif; text-shadow: 
+          -1px -1px 0 #FFD700, 
+           1px -1px 0 #FFD700, 
+          -1px  1px 0 #FFD700, 
+           1px  1px 0 #FFD700;
+      ">
+          17<sup>th</sup> to 19<sup>th</sup> May 2025 | Farmagudi, Ponda, Goa
+        </p>
+        <div class="mx-auto my-4" style="height: 1px; width: 90%; max-width: 750px; background-color: #fb923c;"></div>
+<br>
+    <!-- 🔹 Button -->
+<div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+  <a href="#donate"
+    class="inline-block bg-primary text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded shadow-lg hover:shadow-xl transition-all whitespace-nowrap text-lg"
+    style="background-color: red; width:170px; min-width:60px; text-align: center; margin-left: 130px;">
+    DONATE NOW
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section with Countdown -->
+  <!-- Desktop View -->
+  <div class="w-full py-12 px-4 bg-[#ffead5] text-center hidden sm:block" id="devji">
+    <h1 class="text-[#f04f23] text-4xl mb-6"
+      style="font-size: 2.8rem; font-weight: bold; font-family: 'Poppins', Arial, sans-serif;">
+      A once-in-a-lifetime spiritual awakening.
+    </h1>
+    <p class="text-[#1E88E5] text-xl mb-10"
+      style="font-size: 2.5rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+      Join • Support • Be part of history.
+    </p>
+
+    <div class="flex justify-center gap-6 mb-8">
+      <div class="countdown-box">
+        <div class="countdown-number" id="days">00</div>
+        <div class="countdown-label">days</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="hours">00</div>
+        <div class="countdown-label">hours</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="minutes">00</div>
+        <div class="countdown-label">minutes</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="seconds">00</div>
+        <div class="countdown-label">seconds</div>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="max-w-7xl mx-auto px-2 py-9">
+      <div class="bg-[#fedbb4] rounded-xl p-6 flex flex-col md:flex-row items-center shadow-md">
+        <div class="md:w-2/3 pr-4">
+          <div class="mb-6">
+            <p class="mb-2" style="font-size:22px;">
+              The seed of Sanatan Rashtra would be formed by 2025. This will
+              be the start of Ram Rajya on Earth, which will continue for
+              close to 1000 years.
+            </p>
+            <p class="text-sm text-gray-600"
+              style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+              Sachdananda Paramahansa Dr Athavale, 1998
+            </p>
+          </div>
+          <div>
+            <p class="mb-2" style="font-size:22px;">
+              Although everything happens as per God’s plan, God
+              has reserved some part for man’s wilful action
+              (kriyaman) for this event. If man uses his kriyaman
+              properly, then it will reduce the adverse effects of this
+              transition to Ram Rajya.
+            </p>
+            <p class="text-gray-600"
+              style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+              Sachdananda Paramahansa Dr Athavale, Dec 2021
+            </p>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
+          <div class="relative">
+            <div class="absolute inset-0"></div>
+            <img src="photos/IMAGES-02.png" alt="Spiritual Leader"
+              class="relative z-10 w-150 h-196 object-cover object-top" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile View -->
+  <!-- Mobile View -->
+  <div class="w-full py-8 px-4 bg-[#ffead5] text-center sm:hidden" >
+    <!-- Main Heading -->
+    <h1 class="text-[#f04f23] mb-4"
+      style="font-size: 1.5rem; font-weight: bold; font-family: 'Poppins', Arial, sans-serif; line-height: 1.3;" id="devji1">
+      A once-in-a-lifetime spiritual awakening.
+    </h1>
+
+    <!-- Subheading -->
+    <p class="text-[#1E88E5] mb-4"
+      style="font-size: 1.3rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+      Join·Support·Be part of history
+    </p>
+
+    <!-- Countdown Numbers -->
+    <div class="flex justify-center gap-4 mb-6">
+      <div class="countdown-box1 text-sm px-3 py-2">
+        <div class="countdown-number" id="days" style="font-size: 1.5rem;">00</div>
+        <div class="countdown-label" style="font-size:10px">days</div>
+      </div>
+      <div class="countdown-box1 text-sm px-3 py-2">
+        <div class="countdown-number" id="hours" style="font-size: 1.5rem;">00</div>
+        <div class="countdown-label" style="font-size:10px">hours</div>
+      </div>
+      <div class="countdown-box1 text-sm px-3 py-2">
+        <div class="countdown-number" id="minutes" style="font-size: 1.5rem;">00</div>
+        <div class="countdown-label" style="font-size:10px;">minutes</div>
+      </div>
+      <div class="countdown-box1 text-sm px-3 py-2">
+        <div class="countdown-number" id="seconds" style="font-size: 1.5rem;">00</div>
+        <div class="countdown-label" style="font-size:10px;">seconds</div>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="w-full px-2 py-4">
+      <div class="bg-[#fedbb4] rounded-xl p-6 shadow-md">
+        <div class="w-full flex justify-center mt-6 md:mt-0">
+          <div class="relative">
+            <div class="absolute inset-0"></div>
+            <img src="photos/IMAGES-02.png" alt="Spiritual Leader"
+              class="relative z-10 w-63 h-50 object-cover object-top" />
+          </div>
+        </div>
+        <!-- First Quote -->
+        <div class="mb-4">
+          <p class="mb-2 text-left" style="font-size: 0.9rem; line-height: 1.5;">
+            The seed of Sanatan Rashtra would be formed by 2025. This will be the start of Ram Rajya on Earth, which
+            will continue for close to 1000 years.
+          </p>
+          <p class="text-right text-xs"
+            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif; margin-right: 45px;">
+            Sachchidananda Parabrahman Dr Athavale, 1998
+          </p>
+        </div>
+
+        <!-- Second Quote -->
+        <div>
+          <p class="mb-2 text-left" style="font-size: 0.9rem; line-height: 1.5;">
+            Although everything happens as per God's plan, God has reserved some part for man's wilful action
+            (kriyaman) for this event. If man uses his kriyaman properly, then it will reduce the adverse effects of
+            this transition to Ram Rajya.
+          </p>
+          <p class="text-right text-xs"
+            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;  margin-right: 45px;">
+            Sachchidananda Parabrahman Dr Athavale, 2021
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- About the Event Section -->
+  <div class="w-full bg-[#fffcd5] py-12 px-4 hidden sm:block">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-bold text-center mb-8"
+        style=" font-size: 2.8rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif; ">
+        About the Event
+      </h2>
+      <p class="text-center text-lg mb-12" style="color: black; font-weight: bold; font-size: 24px;">
+        This May 2025, we mark three extraordinary milestones:
+      </p>
+
+      <div class="flex flex-col md:flex-row justify-between gap-8 mb-16">
+        <div class="flex flex-col items-center text-center">
+          <div class="w-50 h-60  rounded-full overflow-hidden">
+            <img src="photos/IMAGES-03.png" alt="Spiritual Leader" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-semibold mb-2"
+            style="color: rgb(27, 26, 26); font-weight: bold; font-size: 22px; font-family: 'Poppins', Arial, sans-serif;">
+            The Birthday of His Holiness <br>Sachdananda <br>Paramahansa Dr. Athavale</h3>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="w-50 h-60 rounded-full overflow-hidden">
+            <img src="photos/IMAGES-04.png" alt="Spiritual Leader" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-semibold mb-2"
+            style="color: rgb(27, 26, 26); font-weight: bold; font-size: 22px; font-family: 'Poppins', Arial, sans-serif;">
+            25 years of Sanatan <br>Sanatha's service to reviving<br> Sanatan Dharma.</h3>
+          <p class="text-sm">
+
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="w-50 h-60  rounded-full overflow-hidden">
+            <img src="photos/IMAGES-05.png" alt="Spiritual Leader" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-semibold mb-2"
+            style="color: rgb(27, 26, 26); font-weight: bold; font-size: 22px; font-family: 'Poppins', Arial, sans-serif;">
+            The dawn of a new <br>spiritual era, foretold<br>
+            by Saints and Sages
+          </h3>
+        </div>
+      </div>
+
+      <!-- Statistics Bar -->
+      <div class="border border-[#1E88E5] rounded-lg p-4 ">
+        <div class="flex flex-col md:flex-row justify-between items-center relative">
+          <div class="text-center px-4 py-2">
+            <h4 class="text-4xl font-bold "
+              style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 45px;">15</h4>
+            <p style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 20px;">Countries</p>
+          </div>
+
+          <div
+            class="hidden md:block w-3 h-3 bg-[#1E88E5] rounded-full absolute left-1/4 top-1/2 transform -translate-y-1/2">
+          </div>
+
+          <div class="text-center px-4 py-2">
+            <h4 class="text-4xl font-bold "
+              style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 45px;">1000+</h4>
+            <p style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 20px;">Organizations</p>
+          </div>
+
+          <div
+            class="hidden md:block w-3 h-3 bg-[#1E88E5] rounded-full absolute left-3/4 top-1/2 transform -translate-y-1/2">
+          </div>
+
+          <div class="text-center px-4 py-2">
+            <h4 class="text-4xl font-bold "
+              style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 45px;">25000+</h4>
+            <p style="color: #0065b3;  font-family: 'Poppins', Arial, sans-serif; font-size: 20px;">Expected attendees
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full bg-[#fffcd5] py-8 md:py-12 px-4  sm:hidden">
+    <div class="max-w-6xl mx-auto">
+      <!-- Main Heading -->
+      <h2 class="font-bold text-center mb-6 md:mb-8 text-3xl md:text-4xl lg:text-5xl"
+        style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif; font-size: 25px;">
+        About the Event
+      </h2>
+
+      <!-- Subheading -->
+      <p class="text-center font-bold mb-8 md:mb-12 text-lg md:text-xl lg:text-2xl" style="color: black;">
+        This May 2025, we mark three extraordinary milestones:
+      </p>
+
+      <!-- Milestones Cards - Mobile Stacked, Desktop Row -->
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-10 md:mb-16">
+        <!-- Milestone 1 -->
+        <div class="flex flex-col items-center text-center max-w-xs">
+          <div class="w-40 h-40 md:w-50 md:h-60 rounded-full overflow-hidden mb-4">
+            <img src="photos/IMAGES-03.png" alt="Spiritual Leader" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-bold text-lg md:text-xl" style="color: #1b1a1a; font-family: 'Poppins', Arial, sans-serif;">
+            The Birthday of His Holiness<br>Sachidananda<br>Paramahansa Dr. Athavale
+          </h3>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="flex flex-col items-center text-center max-w-xs">
+          <div class="w-40 h-40 md:w-50 md:h-60 rounded-full overflow-hidden mb-4">
+            <img src="photos/IMAGES-04.png" alt="Spiritual Service" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-bold text-lg md:text-xl" style="color: #1b1a1a; font-family: 'Poppins', Arial, sans-serif;">
+            25 years of Sanatan<br>Sanstha's service to reviving<br>Sanatan Dharma
+          </h3>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="flex flex-col items-center text-center max-w-xs">
+          <div class="w-40 h-40 md:w-50 md:h-60 rounded-full overflow-hidden mb-4">
+            <img src="photos/IMAGES-05.png" alt="New Spiritual Era" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="font-bold text-lg md:text-xl" style="color: #1b1a1a; font-family: 'Poppins', Arial, sans-serif;">
+            The dawn of a new<br>spiritual era, foretold<br>by Saints and Sages
+          </h3>
+        </div>
+      </div>
+
+      <!-- Statistics Bar -->
+      <div class="border border-[#1E88E5] rounded-lg p-4">
+        <!-- Mobile: Stacked -->
+        <div class="md:hidden flex flex-col gap-4">
+          <div class="text-center">
+            <h4 class="text-3xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">15</h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Countries</p>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-3xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">1000+</h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Organizations</p>
+          </div>
+
+          <div class="text-center">
+            <h4 class="text-3xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">25000+
+            </h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Expected attendees</p>
+          </div>
+        </div>
+
+        <!-- Desktop: Inline with dots -->
+        <div class="hidden md:flex flex-row justify-between items-center relative">
+          <div class="text-center px-4 py-2 flex-1">
+            <h4 class="text-4xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">15</h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Countries</p>
+          </div>
+
+          <div class="w-3 h-3 bg-[#1E88E5] rounded-full absolute left-1/3 top-1/2 transform -translate-y-1/2"></div>
+
+          <div class="text-center px-4 py-2 flex-1">
+            <h4 class="text-4xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">1000+</h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Organizations</p>
+          </div>
+
+          <div class="w-3 h-3 bg-[#1E88E5] rounded-full absolute left-2/3 top-1/2 transform -translate-y-1/2"></div>
+
+          <div class="text-center px-4 py-2 flex-1">
+            <h4 class="text-4xl font-bold" style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">25000+
+            </h4>
+            <p style="color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">Expected attendees</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- What to Expect Section -->
+
+  <section class="py-16 px-4 bg-[#dcf2fd] hidden sm:block">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-bold text-center mb-8"
+        style="font-size: 2.8rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+        What to Expect
+      </h2>
+
+      <!-- Grid Start -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Item 1 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden"> <!-- Bigger in desktop -->
+            <img src="photos/IMAGES-06.png" alt="Guidance by Saints" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Guidance by Saints and speeches by dignitaries</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-07.png" alt="Pavitra Charan Paduka" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">The Pavitra Charan Paduka Darshan of over 15 saints, such as Samartha
+              Ramdas Swami</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-08.png" alt="Mahalaxmi Yagna" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Mahadhanvantari Yajna for good health</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-09.png" alt="Award ceremony" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Award ceremony for Dharmarakshaks</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-10.png" alt="Campaign" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Rally and awareness campaign for Sanatan Rashtra</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-11.png" alt="Jap Yadnya" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Jap Yadnya by 15,000 people chanting Shri Ram's name</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-12.png" alt="Unique exhibitions" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Unique exhibitions, like the sacred weapons of Chhatrapati Shivaji
+              Maharaj</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="rounded-lg overflow-hidden">
+          <div class="h-72 lg:h-80 overflow-hidden">
+            <img src="photos/IMAGES-13.png" alt="Showcasing floors" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="p-4 text-center">
+            <p class="text-gray-800 font-medium">Showcasing floors art and cultural Bharatiya Sanskrut</p>
+          </div>
+        </div>
+      </div>
+      <!-- Grid End -->
+
+    </div>
+  </section>
+  <section class="expect-section">
+    <h2 class="expect-title">What to Expect</h2>
+    <div class="expect-grid">
+      <div class="expect-item">
+        <img src="photos/IMAGES-06.png" alt="Guidance">
+        <p>Guidance by Saints and speeches by dignitaries.</p>
+      </div>
+
+      <div class="expect-item">
+        <img src="photos/IMAGES-07.png" alt="Paduka Darshan">
+        <p>The Pavitra Charan Paduka Darshan of over 15 Saints, such as Samartha Ramdas Swami</p>
+      </div>
+
+      <div class="expect-item">
+        <img src="photos/IMAGES-08.png" alt="Yajna">
+        <p>Mahadhanvantari Yajna for good health</p>
+      </div>
+
+      <div class="expect-item">
+        <img src="photos/IMAGES-09.png" alt="Award">
+        <p>Award ceremony for Dharmarakshaks</p>
+      </div>
+
+      <div class="expect-item">
+        <img src="photos/IMAGES-10.png" alt="Rally">
+        <p>Rally and awareness campaign for Sanatan Rashtra</p>
+      </div>
+
+      <div class="expect-item">
+        <img src="photos/IMAGES-11.png" alt="Jap Yadnya">
+        <p>Jap Yadnya by 15,000 people chanting Shri Ram’s Name</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Join Us Banner Section -->
+  <section class="relative py-20">
+    <div class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('photos/IMAGES-14.png'); background-color: rgba(85, 82, 82, 0.6); background-blend-mode: overlay;">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+      <p class="text-white text-xl md:text-2xl leading-relaxed mb-8">
+        Join us as over 25,000 devotees, Saints, national leaders, and
+        seekers gather to witness a powerful declaration of Dharma that will
+        echo across India.
+      </p>
+      <button
+        class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
+        DONATE NOW
+      </button>
+    </div>
+  </section>
+  <!-- Saints and Distinguished Guests Section -->
+  <section class="py-16 px-4 bg-[#ffead5]" id="guest">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-bold text-center mb-8 hidden sm:block"
+        style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
+        id="guest">
+        Saints and Distinguished guests<br> attending the event
+      </h2>
+      <h2 class="font-bold text-center mb-8 block sm:hidden"
+        style="font-size:1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+        Saints and Distinguished <br>guests attending the event
+      </h2>
+      <div class="carousel-container"
+        style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+        <div class="carousel-slide" id="carousel">
+          <!-- Row 1, First 4 -->
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/srisri_1-1.png" alt="Gurudev" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Gurudev</p>
+              <p>Sri Sri Ravi Shankar</p>
+              <p>Founder, Art of Living</p>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/govinddevgiri-1.png" alt="Param Pujya" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Param Pujya</p>
+              <p>Swami Avdheshanand</p>
+              <p>Giri Maharaj</p>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/ravindrapuri-1.png" alt="Pujya Maharaj"
+                  class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Pujya Mahant</p>
+              <p>Ravindra Puriji</p>
+              <p>Maharaj</p>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/babaramdev-1.png" alt="Param Pujya" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Param Pujya</p>
+              <p>Yogrishi Swami </p>
+              <p>Ramdev</p>
+            </div>
+          </div>
+
+          <!-- Row 2, First 4 -->
+          <div class="carousel-item"
+            style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/rameshwarmauli-1.png" alt="Mata Ji" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Jagatguru
+              </p>
+              <p> Ramrajeshawar</p>
+              <p>Acharya Mauli Sarkar</p>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style=" font-size:20px; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/rajudasji-1.png" alt="Swami Ji" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Mahant Raju Dasji
+              </p>
+              <p> Hanumangadhi</p>
+              <p> Ayodhya</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/brahmeshanand-1.png" alt="Acharya" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Sadguru Brahmeshanand
+              </p>
+              <p>Acharya</p>
+              <p>Swami</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/devkinandan-1.png" alt="Sadhvi" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Shri Devkinandan
+              </p>
+              <p> Thakur </p>
+              <p>Maharajji</p>
+            </div>
+          </div>
+
+          <!-- Row 1, Next 4 (hidden initially) -->
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/fadnavis-1.png" alt="Swami" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Devendra Fadnavis
+              </p>
+              <p>Chief Minister</p>
+              <p>of Maharashtra</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/visnu_deo-1.png" alt="Swami" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Vishnu Deo Sai
+              </p>
+              <p> Chief Minister</p>
+              <p> of Chhattisgarh</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/sawant-1.png" alt="Acharya" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Dr Pramod Sawant
+              </p>
+              <p>Chief Minister</p>
+              <p>of Goa</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/shripadnaik-1.png" alt="Jagadguru" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Shripad Naik
+              </p>
+              <p>Union Minister of State</p>
+              <p> for Ministry of Power</p>
+            </div>
+          </div>
+
+          <!-- Row 2, Next 4 (hidden initially) -->
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/shinde-1.png" alt="Sadhvi" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Eknath Shinde
+              </p>
+              <p> Deputy Chief Minister</p>
+              <p> of Maharashtra</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/vijay_sharma-1.png" alt="Swami" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. Vijay Sharma
+              </p>
+              <p>Deputy Chief Minister</p>
+              <p> of Chhattisgarh</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/singh-1.png" alt="Mahamandaleshwar" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Hon. T Raja Singh
+              </p>
+              <p> Member of Telangana</p>
+              <p>Legislative Assembly</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="flex flex-col items-center">
+              <div class="w-40 h-40  rounded-full overflow-hidden border-4 border-white shadow-lg mb-3">
+                <img src="photos/jain-1.png" alt="Sri" class="w-full h-full object-cover object-top" />
+              </div>
+              <p>Adv. Vishnu Shankar Jain
+              </p>
+              <p> Lawer Supreme</p>
+              <p> Court of India</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="carousel-control carousel-prev" id="prevBtn">
+          <i class="ri-arrow-left-s-line ri-lg"></i>
+        </div>
+        <div class="carousel-control carousel-next" id="nextBtn">
+          <i class="ri-arrow-right-s-line ri-lg"></i>
+        </div> -->
+      </div>
+
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+      <p class="text-white text-xl md:text-2xl leading-relaxed mb-8"
+        style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+        <br>This Mahotsav is not just an event<br>it’s a turning point for the Nation and Dharma.
+
+      </p>
+      <button
+        class="bg-secondary hover:bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300"
+        style="background-color: red;">DONATE NOW</button>
+    </div>
+  </section>
+
+  <section class="bg-white py-12 px-6 hidden sm:block">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-bold text-center mb-8"
+        style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">The
+        Programme Schedule</h2>
+      <div class="relative">
+        <div class="absolute left-[50%] top-0 bottom-0 w-0.5 bg-red-500"></div>
+        <div class="space-y-8">
+          <!-- Pre Event -->
+          <div class="relative">
+            <div class="absolute left-[50%] w-3 h-3 bg-red-500 rounded-full -translate-x-[6px]"></div>
+            <div class="w-[calc(50%-20px)] ml-auto bg-[#d4d1e9] rounded-lg p-6 shadow-lg relative">
+              <div class="absolute left-0 top-[50%] w-4 h-0.5 bg-red-500 -translate-x-4 -translate-y-[50%]"></div>
+              <h3
+                style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+                Pre Event</h3>
+              <ul class="space-y-2"
+                style=" font-size: 1rem; font-weight: bold; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+                <li>Rally and CM addressing the crowd about Digital museum on 16th</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main Event - 17th May -->
+          <div class="relative">
+            <div class="absolute left-[50%] w-3 h-3 bg-red-500 rounded-full -translate-x-[6px]"></div>
+            <div class="w-[calc(50%-20px)] bg-[#d9ebc0] rounded-lg p-6 shadow-lg relative">
+              <div class="absolute right-0 top-[50%] w-4 h-0.5 bg-red-500 translate-x-4 -translate-y-[50%]"></div>
+              <h3
+                style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+                Main Event - 17th May</h3>
+              <ul class="space-y-2"
+                style=" font-size: 1rem; font-weight: bold; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+                <li>● Lighting the Lamp and Inauguration</li>
+                <li>● Jap Yadnya</li>
+                <li>● Congregation of Saints to proclaim Sanatan Rashtra</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main Event - 18th May -->
+          <div class="relative">
+            <div class="absolute left-[50%] w-3 h-3 bg-red-500 rounded-full -translate-x-[6px]"></div>
+            <div class="w-[calc(50%-20px)] ml-auto bg-[#d5e5f6] rounded-lg p-6 shadow-lg relative">
+              <div class="absolute left-0 top-[50%] w-4 h-0.5 bg-red-500 -translate-x-4 -translate-y-[50%]"></div>
+              <h3
+                style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+                Main Event - 18th May</h3>
+              <ul class="space-y-2"
+                style=" font-size: 1rem; font-weight: bold; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+                <li>● Display of weapons</li>
+                <li>● Speeches of Dignitaries</li>
+                <li>● Unveiling the Dharmadhwaj & Sanatan Rastra emblem</li>
+                <li>● Hindu Rashtra Ratra and Sanatan</li>
+                <li>● Dharmashri Award Ceremony</li>
+                <li>● Celebrating Sachchidananda Parabrahman Dr. Athavale birthday</li>
+                <li>● Nadi Vachan</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main Event - 19th May -->
+          <div class="relative">
+            <div class="absolute left-[50%] w-3 h-3 bg-red-500 rounded-full -translate-x-[6px]"></div>
+            <div class="w-[calc(50%-20px)] bg-[#ffecd6] rounded-lg p-6 shadow-lg relative">
+              <div class="absolute right-0 top-[50%] w-4 h-0.5 bg-red-500 translate-x-4 -translate-y-[50%]"></div>
+              <h3
+                style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+                Main Event - 19th May</h3>
+              <ul class="space-y-2"
+                style=" font-size: 1rem; font-weight: bold; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+                <li>● Presenting Sachchidananda Parabrahman Dr. Athavale efforts to establish Dharma</li>
+                <li>● Mahadhanwantri Yag</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Post Event -->
+          <div class="relative">
+            <div class="absolute left-[50%] w-3 h-3 bg-red-500 rounded-full -translate-x-[6px]"></div>
+            <div class="w-[calc(50%-20px)] ml-auto bg-[#fad6e5] rounded-lg p-6 shadow-lg relative">
+              <div class="absolute left-0 top-[50%] w-4 h-0.5 bg-red-500 -translate-x-4 -translate-y-[50%]"></div>
+              <h3
+                style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+                Post Event</h3>
+              <ul class="space-y-2"
+                style=" font-size: 1rem; font-weight: bold; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+                <li>● Yuddhshaya Krutshishchaya - Drama</li>
+                <li>● Exhibition open for all Goan people, open to all</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- mobile response  -->
+  <section class="bg-white py-12 px-6 block sm:hidden">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-bold text-center mb-8"
+        style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">The
+        Programme Schedule</h2>
+
+      <!-- Pre Event -->
+      <div class="bg-[#d4d1e9] rounded-lg p-6 mb-6 shadow-lg">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+          Pre Event</h3>
+        <p style="font-size: 1rem; font-weight: 500; color: #161616; font-family: 'Poppins', Arial, sans-serif;">
+          Rally and CM addressing the crowd about Digital museum on 16th
+        </p>
+      </div>
+
+      <!-- Main Event - 17th May -->
+      <div class="bg-[#d9ebc0] rounded-lg p-6 mb-6 shadow-lg">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+          Main Event - 17th May</h3>
+        <ul style="font-size: 1rem; font-weight: 500; color: #161616; font-family: 'Poppins', Arial, sans-serif;"
+          class="list-disc pl-5 space-y-2">
+          <li>Lighting the Lamp and Inauguration</li>
+          <li>Jap Yadnya</li>
+          <li>Congregation of Saints to proclaim Sanatan Rashtra</li>
+        </ul>
+      </div>
+
+      <!-- Main Event - 18th May -->
+      <div class="bg-[#d5e5f6] rounded-lg p-6 mb-6 shadow-lg">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+          Main Event - 18th May</h3>
+        <ul style="font-size: 1rem; font-weight: 500; color: #161616; font-family: 'Poppins', Arial, sans-serif;"
+          class="list-disc pl-5 space-y-2">
+          <li>Display of weapons</li>
+          <li>Speeches of Dignitaries</li>
+          <li>Unveiling the Dharmadhwaj & Sanatan Rastra emblem</li>
+          <li>Hindu Rashtra Ratna and Sanatan</li>
+          <li>Dharmashri Award Ceremony</li>
+          <li>Celebrating Sachchidananda Parabrahman Dr. Athavale birthday</li>
+          <li>Nadi Vachan</li>
+        </ul>
+      </div>
+
+      <!-- Main Event - 19th May -->
+      <div class="bg-[#ffecd6] rounded-lg p-6 mb-6 shadow-lg">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+          Main Event - 19th May</h3>
+        <ul style="font-size: 1rem; font-weight: 500; color: #161616; font-family: 'Poppins', Arial, sans-serif;"
+          class="list-disc pl-5 space-y-2">
+          <li>Presenting Sachchidananda Parabrahman Dr. Athavale efforts to establish Dharma</li>
+          <li>Mahadhanwantri Yag</li>
+        </ul>
+      </div>
+
+      <!-- Post Event -->
+      <div class="bg-[#fad6e5] rounded-lg p-6 mb-6 shadow-lg">
+        <h3 style="font-size: 1.2rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+          Post Event</h3>
+        <ul style="font-size: 1rem; font-weight: 500; color: #161616; font-family: 'Poppins', Arial, sans-serif;"
+          class="list-disc pl-5 space-y-2">
+          <li>Yuddhshaya Krutshishchaya - Drama</li>
+          <li>Exhibition open for all Goan people, open to all</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-[#004C99] text-white py-8 px-6 text-center">
+    <div class="max-w-6xl mx-auto">
+      <p style=" font-size: 1.6rem; font-weight: bold; color: #ecedee; font-family: 'Poppins', Arial, sans-serif;">Be
+        there - Support Dharma - Leave a legacy</p><br>
+      <button class="bg-red-600 text-white px-6 py-3 font-bold !rounded-button whitespace-nowrap">DONATE NOW</button>
+    </div>
+  </footer>
+
+
+  <!-- Donation Section -->
+  <section id="donate" class="py-20 bg-[#ffead5]">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        
+        <h2 class="font-bold text-center mb-8 hidden sm:block"
+        style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+        Contribute to this event with your donation
+      </h2>
+      <h2 class="font-bold text-center mb-8 block sm:hidden"
+    style="font-size:1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+    Contribute to this event with your donation
+</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-6">Why Donate?</h3>
+
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-primary mr-4 mt-1">
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-building-4-line"></i>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-1">
+                  Event Infrastructure and <br>Event Management
+
+                </h4>
+                <p class="text-gray-600">
+                  Help create a world-class venue <br>
+                  for this historic gathering
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-primary mr-4 mt-1">
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-fire-line"></i>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-1">
+                  Yajna (Sacred Fires)
+
+                </h4>
+                <p class="text-gray-600">
+                  Support the sacred fire ceremonies<br>
+                  and spiritual programs.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-primary mr-4 mt-1">
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-restaurant-line"></i>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-1">
+                  Annadan (Food Donation)
+
+                </h4>
+                <p class="text-gray-600">
+                  Contribute to providing meals for<br>
+                  thousands of attendees.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-primary mr-4 mt-1">
+                <div class="w-6 h-6 flex items-center justify-center">
+                  <i class="ri-hotel-bed-line"></i>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-1">Lodging of devotees
+                </h4>
+                <p class="text-gray-600">
+                  Help provide lodging for Saints,<br>
+                  volunteers, and participants
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+          <h3 class="text-2xl font-bold mb-6">Make Your Contribution</h3>
+
+          <form>
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2">Select Amount</label>
+              <div class="grid grid-cols-3 gap-3 mb-4">
+                <button type="button"
+                  class="bg-orange-50 border border-orange-200 hover:bg-orange-100 text-gray-800 font-medium py-3 !rounded-button whitespace-nowrap">
+                  ₹1,100
+                </button>
+                <button type="button"
+                  class="bg-orange-50 border border-orange-200 hover:bg-orange-100 text-gray-800 font-medium py-3 !rounded-button whitespace-nowrap">
+                  ₹2,100
+                </button>
+                <button type="button"
+                  class="bg-orange-50 border border-orange-200 hover:bg-orange-100 text-gray-800 font-medium py-3 !rounded-button whitespace-nowrap">
+                  ₹5,100
+                </button>
+                <button type="button"
+                  class="bg-orange-50 border border-orange-200 hover:bg-orange-100 text-gray-800 font-medium py-3 !rounded-button whitespace-nowrap">
+                  ₹11,000
+                </button>
+                <button type="button"
+                  class="bg-orange-50 border border-orange-200 hover:bg-orange-100 text-gray-800 font-medium py-3 !rounded-button whitespace-nowrap">
+                  ₹21,000
+                </button>
+                <button type="button" class="bg-primary text-white font-medium py-3 !rounded-button whitespace-nowrap">
+                  Custom
+                </button>
+              </div>
+
+              <div class="donation-amount">
+                <input type="number"
+                  class="w-full py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-gray-700"
+                  placeholder="Enter amount" />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2">Purpose of Donation</label>
+              <div class="space-y-2">
+                <div class="custom-radio">
+                  <input type="radio" id="general" name="purpose" checked />
+                  <label for="general">General Support (Use where needed most)</label>
+                </div>
+                <div class="custom-radio">
+                  <input type="radio" id="yajna" name="purpose" />
+                  <label for="yajna">Yajna & Spiritual Activities</label>
+                </div>
+                <div class="custom-radio">
+                  <input type="radio" id="annadan" name="purpose" />
+                  <label for="annadan">Annadan (Food Service)</label>
+                </div>
+                <div class="custom-radio">
+                  <input type="radio" id="accommodation" name="purpose" />
+                  <label for="accommodation">Accommodations</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2">Personal Information</label>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text"
+                  class="w-full py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-gray-700"
+                  placeholder="Full Name" />
+                <input type="email"
+                  class="w-full py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-gray-700"
+                  placeholder="Email Address" />
+                <input type="tel"
+                  class="w-full py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-gray-700"
+                  placeholder="Phone Number" />
+                <input type="text"
+                  class="w-full py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-gray-700"
+                  placeholder="City" />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-medium mb-2">Payment Method</label>
+              <div class="grid grid-cols-3 gap-3 mb-4">
+                <div
+                  class="border border-gray-300 rounded p-4 flex flex-col items-center justify-center cursor-pointer hover:border-primary">
+                  <div class="w-8 h-8 flex items-center justify-center text-primary mb-2">
+                    <i class="ri-bank-card-line ri-lg"></i>
+                  </div>
+                  <span class="text-sm">Card</span>
+                </div>
+                <div
+                  class="border border-gray-300 rounded p-4 flex flex-col items-center justify-center cursor-pointer hover:border-primary">
+                  <div class="w-8 h-8 flex items-center justify-center text-primary mb-2">
+                    <i class="ri-bank-line ri-lg"></i>
+                  </div>
+                  <span class="text-sm">Bank Transfer</span>
+                </div>
+                <div
+                  class="border border-primary rounded p-4 flex flex-col items-center justify-center cursor-pointer bg-orange-50">
+                  <div class="w-8 h-8 flex items-center justify-center text-primary mb-2">
+                    <i class="ri-qr-code-line ri-lg"></i>
+                  </div>
+                  <span class="text-sm">UPI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <div class="custom-checkbox">
+                <input type="checkbox" id="terms" checked />
+                <label for="terms">I agree to the terms and conditions</label>
+              </div>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-primary text-white font-semibold py-4 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+              DONATE NOW
+            </button>
+
+            <div class="mt-4 flex items-center justify-center space-x-4">
+              <div class="w-8 h-8 flex items-center justify-center text-gray-500">
+                <i class="ri-lock-line ri-lg"></i>
+              </div>
+              <span class="text-sm text-gray-500">Secure Payment • Tax Benefits Available</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- Media Gallery Section -->
+  <section class="mb-16 bg-[#fffcd5] rounded-lg p-8">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Section 1 -->
+      <div class="border-t border-b border-gray-300 py-6 mb-4">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('section1')">
+          <h2 class="text-2xl font-bold text-[#c8252c]" style="font-family: 'Poppins', Arial, sans-serif;">
+            About Sanatan Sanstha, the Organiser of the Sanatan Rashtra Shankhnad Mahotsav
+          </h2>
+          <svg id="icon-section1" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+    
+        <div id="section1" class="mt-6 hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-6">
+            <!-- Image Left -->
+            <div class="rounded-2xl overflow-hidden">
+              <img src="photos/IMAGES-15.png" alt="Sanatan Sanstha" class="w-80 h-auto object-cover object-top rounded-2xl" />
+            </div>
+            <!-- Text Right -->
+            <div>
+              <p class="text-lg font-semibold text-[#111111]" style="font-family: 'Poppins', Arial, sans-serif;">
+                To facilitate the establishment of Sanatan Rashtra (Ram Rajya) on Earth, Sachchidananda Parabrahman Dr Athavale created the platform of Sanatan Sanstha (rooted in Sanatan Dharma) to prepare society to herald in this Divine era. 
+                For over 25 years, Sachchidananda Parabrahman Dr Athavale has been guiding society, nurturing seekers and leading spiritual initiatives across Bharat. 
+                Those who wanted to grow spiritually were provided with clear principles and guidelines to nurture their spiritual journey. 
+                Every effort was made to assist them in their spiritual growth. 
+                In response to the present challenges confronting Bharat and with a clear vision for the protection and propagation of Sanatan Dharma for future generations, 
+                Sachchidananda Parabrahman Dr Athavale strengthened the bond and unity between different organisations working for Sanatan Dharma.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Section 2 -->
+      <div class="border-t border-b border-gray-300 py-6 mb-4">
+        <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('section2')">
+          <h2 class="text-2xl font-bold text-[#c8252c]" style="font-family: 'Poppins', Arial, sans-serif;">
+            The Significance of the Name of the event- Why Shankhnad?
+          </h2>
+          <svg id="icon-section2" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+    
+        <div id="section2" class="mt-6 hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-6">
+            <!-- Text Left -->
+            <div>
+              <p class="text-lg font-semibold text-[#111111]" style="font-family: 'Poppins', Arial, sans-serif;">
+                In our scriptures, 'Shankhnad' (blowing of the conch) symbolizes valor and auspicious beginnings. 
+                Hence, blowing the conch of Sanatan Rashtra Shankhnad Mahotsav signifies that the mission behind it will be an essential stepping stone towards societal unity and harmony. 
+                It will be like a trumpet call that will resonate in schools, it heralds unity amongst Hindu sects, cultural revival, and the protection of Sanatan Dharma for future generations.
+              </p>
+            </div>
+            <!-- Image Right -->
+            <div class="rounded-2xl overflow-hidden">
+              <img src="photos/IMAGES-16.png" alt="Shankhnad significance" class="w-80 h-auto object-cover object-top rounded-2xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <h2 class="text-4xl font-bold mb-4 text-center block sm:hidden"
+      style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
+      id="media">
+      Media Gallery
+    </h2>
+    <h2 class="text-4xl font-bold mb-4 text-center hidden sm:block"
+    style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
+    id="media1">
+    Media Gallery
+  </h2>
+
+    <!-- Gallery Wrapper -->
+    <div class="relative text-center">
+      <!-- Left Button -->
+      <button onclick="scrollGallery('left')"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 rounded-full p-2 shadow-md focus:outline-none">
+        <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-arrow-left-s-line ri-lg"></i>
+        </div>
+      </button>
+
+      <!-- Right Button -->
+      <button onclick="scrollGallery('right')"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 rounded-full p-2 shadow-md focus:outline-none">
+        <div class="w-8 h-8 flex items-center justify-center">
+          <i class="ri-arrow-right-s-line ri-lg"></i>
+        </div>
+      </button>
+
+      <!-- Gallery Images -->
+      <div class="flex items-center justify-between">
+        <div id="galleryScroll" class="flex gap-4 overflow-x-auto py-4 px-10 w-full scroll-smooth">
+          <!-- Image Blocks -->
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/maria-wirth-invited.jpeg')">
+            <img src="photos/maria-wirth-invited.jpeg" alt="Image 1" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/saints-invited-from-karnataka.jpeg')">
+            <img src="photos/saints-invited-from-karnataka.jpeg" alt="Image 2" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/major-gaurav-arya-invited.jpeg')">
+            <img src="photos/major-gaurav-arya-invited.jpeg" alt="Image 3" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/maha-cm-meet-mumbai.jpg')">
+            <img src="photos/maha-cm-meet-mumbai.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/maha-cm-meet.jpg')">
+            <img src="photos/maha-cm-meet.jpg" alt="Image 5" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/inaugration-of-website-srsm.jpeg')">
+            <img src="photos/inaugration-of-website-srsm.jpeg" alt="Image 6" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/ias-officer-invited.jpeg')">
+            <img src="photos/ias-officer-invited.jpeg" alt="Image 7" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/harshankar-jain-invited.jpeg')">
+            <img src="photos/harshankar-jain-invited.jpeg" alt="Image 8" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/devkinandanji-thakur.jpeg')">
+            <img src="photos/devkinandanji-thakur.jpeg" alt="Image 9" class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/collector-inspecting-ground-preparations.jpeg')">
+            <img src="photos/collector-inspecting-ground-preparations.jpeg" alt="Image 9"
+              class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/collector-inspecting-ground-preparations2.jpeg')">
+            <img src="photos/collector-inspecting-ground-preparations2.jpeg" alt="Image 9"
+              class="w-full h-full object-cover">
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openPopup('photos/bageshwar-dham-invited.jpeg')">
+            <img src="photos/bageshwar-dham-invited.jpeg" alt="Image 9" class="w-full h-full object-cover">
+          </div>
+          <!-- Video Blocks -->
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openVideoPopup('vedio/govindji.mp4')">
+            <video class="w-full h-full object-cover" muted loop autoplay playsinline>
+              <source src="vedio/govindji.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openVideoPopup('vedio/medha-kulkarni.mp4')">
+            <video class="w-full h-full object-cover" muted loop autoplay playsinline>
+              <source src="vedio/medha-kulkarni.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="w-80 h-80 rounded flex-shrink-0 overflow-hidden cursor-pointer"
+            onclick="openVideoPopup('vedio/sureshji.mp4')">
+            <video class="w-full h-full object-cover" muted loop autoplay playsinline>
+              <source src="vedio/sureshji.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+      onclick="handleOutsideClick(event)">
+      <!-- Close Button -->
+      <button onclick="closePopup()"
+        class="absolute top-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-40 rounded-full p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Popup Image -->
+      <img id="popupImage" src="" alt="Large View" class="max-w-[90%] max-h-[90%] rounded shadow-lg hidden">
+      <!-- Popup Video -->
+      <video id="popupVideo" controls class="max-w-[90%] max-h-[90%] rounded shadow-lg hidden">
+        <source id="popupVideoSource" src="" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script>
+    function scrollGallery(direction) {
+      const gallery = document.getElementById('galleryScroll');
+      const imageBlock = gallery.querySelector('div'); // first image block
+      const blockWidth = imageBlock.offsetWidth + 16; // image width + gap (16px gap)
+
+      const scrollAmount = blockWidth; // Scroll by one full image
+
+      if (direction === 'left') {
+        gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+
+    function openPopup(src) {
+      // Show image, hide video
+      document.getElementById('popupImage').src = src;
+      document.getElementById('popupImage').classList.remove('hidden');
+      document.getElementById('popupVideo').classList.add('hidden');
+
+      document.getElementById('popup').classList.remove('hidden');
+    }
+
+    function openVideoPopup(src) {
+      // Show video, hide image
+      document.getElementById('popupVideoSource').src = src;
+      document.getElementById('popupVideo').load();
+      document.getElementById('popupVideo').classList.remove('hidden');
+      document.getElementById('popupImage').classList.add('hidden');
+
+      document.getElementById('popup').classList.remove('hidden');
+    }
+
+    function closePopup() {
+      document.getElementById('popup').classList.add('hidden');
+
+      // Stop video when closing
+      document.getElementById('popupVideo').pause();
+    }
+
+    function handleOutsideClick(event) {
+      const popupImage = document.getElementById('popupImage');
+      const popupVideo = document.getElementById('popupVideo');
+      if (!popupImage.contains(event.target) && !popupVideo.contains(event.target)) {
+        closePopup();
+      }
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closePopup();
+      }
+    });
+  </script>
+
+
+  <!-- Map Section -->
+  <section class="bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-6">
+        <!-- Desktop Heading -->
+        <h2 class="hidden sm:block text-2xl sm:text-4xl font-bold mb-4" style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+          Event Location and Details
+        </h2>
+        <!-- Mobile Heading -->
+        <h2 class="block sm:hidden text-xl font-bold mb-4"  style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+          Event Location and Details
+        </h2>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Venue Details -->
+        <div class="bg-white p-6 rounded-lg">
+  
+          <!-- Venue Title -->
+          <h3 class="block sm:hidden text-xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+            Venue Details
+          </h3>
+          <h3 class="hidden sm:block text-2xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+            Venue Details
+          </h3>
+  
+          <div class="space-y-6">
+            <!-- Location -->
+            <div class="flex items-start">
+              <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                <i class="ri-map-pin-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                  Infinity Ground Goa Engineering College
+                </h4>
+                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  Farmagudi, Ponda, Goa, 403401 - India
+                </p>
+              </div>
+            </div>
+  
+            <!-- Dates -->
+            <div class="flex items-start">
+              <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                <i class="ri-calendar-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                  Event Dates
+                </h4>
+                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  May 17-19, 2025
+                </p>
+              </div>
+            </div>
+  
+            <!-- Timings -->
+            <div class="flex items-start">
+              <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                <i class="ri-time-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                  Daily Timings
+                </h4>
+                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  5:00 AM to 9:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Transportation -->
+          <div class="mt-8">
+            <h3 class="hidden sm:block text-2xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+              Transportation
+            </h3>
+            <h3 class="block sm:hidden text-xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+              Transportation
+            </h3>
+  
+            <div class="space-y-6">
+              <!-- Airport -->
+              <div class="flex items-start">
+                <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                  <i class="ri-flight-takeoff-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                    Nearest Airport
+                  </h4>
+                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                    Goa International Airport (30 km)
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Railway -->
+              <div class="flex items-start">
+                <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                  <i class="ri-train-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                    Nearest Railway Station
+                  </h4>
+                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                    Madgaon Railway Station (15 km)
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Shuttle -->
+              <div class="flex items-start">
+                <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
+                  <i class="ri-bus-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
+                    Shuttle Services
+                  </h4>
+                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                    Free shuttle services from major hotels and transport hubs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Map -->
+        <div class="h-80 sm:h-96 rounded-lg overflow-hidden">
+          <div class="map-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4281.745764099459!2d73.9807991!3d15.4273476!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bbfbbaade5db3ed%3A0xa05fcb6da72b73f7!2sInfinity%20Ground%20CXGJ%2BW8M%20Veling%2C%20Goa%20403404!3m2!1d15.4273476!2d73.9807991!5e1!3m2!1sen!2sin!4v1746437926148!5m2!1sen!2sin"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Footer conatct-->
+  <footer class="bg-orange-100 text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-6 mb-8">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/SanatanRashtraShankhnad"
+          class="w-14 h-14 rounded-full bg-[#3b5998] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+          <i class="ri-facebook-fill text-2xl text-white"></i>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://x.com/SRSmahotsav"
+          class="w-14 h-14 rounded-full bg-black flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+          <i class="ri-twitter-x-fill text-2xl text-white"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/sanatanrashtrashankhnad/"
+          class="w-14 h-14 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-pink-500 flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+          <i class="ri-instagram-line text-2xl text-white"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@SanatanRashtraShankhnad?reload=9"
+          class="w-14 h-14 rounded-full bg-[#FF0000] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+          <i class="ri-youtube-line text-2xl text-white"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://whatsapp.com/channel/0029VbAtY15JJhzPauCH4R35"
+          class="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+          <i class="ri-whatsapp-line text-2xl text-white"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-sm font-bold text-[#161616]" style="font-size: 1.2rem; font-family: 'Poppins', Arial, sans-serif;">
+        © 2025 Sanatan Rashtra Shankhnad Mahotsav. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButtons = document.querySelectorAll(".section-toggle");
+
+      toggleButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const section = this.closest(".section");
+          const content = section.querySelector(".section-content");
+
+          content.classList.toggle("active");
+
+          // Close other sections
+          document.querySelectorAll(".section-content").forEach((otherContent) => {
+            if (otherContent !== content) {
+              otherContent.classList.remove("active");
+            }
+          });
+        });
+      });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      // Set the end date
+      const endDate = new Date("May 17, 2025 23:59:59").getTime();
+
+      // Function to update the countdown
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("days").innerText = "00";
+          document.getElementById("hours").innerText = "00";
+          document.getElementById("minutes").innerText = "00";
+          document.getElementById("seconds").innerText = "00";
+          return;
+        }
+
+        // Calculate days, hours, minutes, seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Update HTML for both mobile and desktop
+        document.querySelectorAll(".countdown-number").forEach(function (el) {
+          if (el.id === "days") el.innerText = String(days).padStart(2, '0');
+          if (el.id === "hours") el.innerText = String(hours).padStart(2, '0');
+          if (el.id === "minutes") el.innerText = String(minutes).padStart(2, '0');
+          if (el.id === "seconds") el.innerText = String(seconds).padStart(2, '0');
+        });
+      }
+
+      // Initialize the countdown
+      const timer = setInterval(updateCountdown, 1000);
+
+      // Ensure countdown is updated immediately on page load
+      updateCountdown();
+    });
+
+    function toggleSection(sectionId) {
+      const content = document.getElementById(sectionId);
+      const icon = document.getElementById('icon-' + sectionId);
+
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
