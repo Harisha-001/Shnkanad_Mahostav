@@ -23,7 +23,7 @@
 <body class="bg-white">
   <!-- Sticky Donate Button -->
   <div class="sticky-donate hidden md:block">
-    <a href="#donate" style="background-color: red;"
+    <a href="#donate" style="background-color: #c8252c;;"
       class="bg-primary text-white font-semibold px-6 py-3 !rounded-button shadow-lg hover:shadow-xl transition-all flex items-center whitespace-nowrap">
       <div class="w-7 h-8 flex items-center justify-center mr-2">
         <i class="ri-heart-fill"></i>
@@ -32,57 +32,57 @@
     </a>
   </div>
   <!-- Navigation -->
-  <nav class="bg-white/90 backdrop-blur-md py-4 px-6 md:px-12 flex items-center justify-between shadow-sm fixed w-full z-50"
-  style="background-color: rgba(235, 216, 196, 0.9);">
-  <div class="flex items-center">
-    <!-- Logo -->
-    <img src="photos/IMAGES-16.png" alt="Your Logo" class="h-12 md:h-20 mr-10">
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex ml-13 space-x-9">
-      <a href="#home" class="text-gray-700 hover:text-primary transition-colors"
-        style="color: black; font-size: 20px;">Home</a>
-      <a href="#devji" class="text-gray-700 hover:text-primary transition-colors"
-        style="color: black; font-size: 20px;">Gurudevji</a>
-      <a href="#guest" class="text-gray-700 hover:text-primary transition-colors"
-        style="color: black; font-size: 20px;">Distinguished Guests</a>
-      <a href="#media1" class="text-gray-700 hover:text-primary transition-colors"
-        style="color: black; font-size: 20px;">Media</a>
+  <nav
+    class="bg-white/90 backdrop-blur-md py-4 px-6 md:px-12 flex items-center justify-between shadow-sm fixed w-full z-50"
+    style="background-color: rgba(235, 216, 196, 0.9);">
+    <div class="flex items-center">
+      <!-- Logo -->
+      <img src="photos/IMAGES-16.png" alt="Your Logo" class="h-12 md:h-20 mr-10">
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex ml-13 space-x-9">
+        <a href="#home" class="text-gray-700 hover:text-primary transition-colors"
+          style="color: black; font-size: 20px;">Home</a>
+        <a href="#devji" class="text-gray-700 hover:text-primary transition-colors"
+          style="color: black; font-size: 20px;">Gurudevji</a>
+        <a href="#guest" class="text-gray-700 hover:text-primary transition-colors"
+          style="color: black; font-size: 20px;">Distinguished Guests</a>
+        <a href="#media1" class="text-gray-700 hover:text-primary transition-colors"
+          style="color: black; font-size: 20px;">Media</a>
+      </div>
+    </div>
+
+    <!-- Hamburger Icon (Mobile) -->
+    <div class="md:hidden">
+      <button id="menuToggle" class="focus:outline-none">
+        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden fixed top-20 left-0 w-full bg-[#ebd8c4] backdrop-blur-md shadow-md hidden z-40">
+    <div class="flex flex-col items-center py-4 space-y-4">
+      <a href="#home1" class="text-black text-lg" onclick="toggleMenu()">Home</a>
+      <a href="#devji1" class="text-black text-lg" onclick="toggleMenu()">Gurudevji</a>
+      <a href="#guest" class="text-black text-lg" onclick="toggleMenu()">Distinguished Guests</a>
+      <a href="#media" class="text-black text-lg" onclick="toggleMenu()">Media</a>
     </div>
   </div>
 
-  <!-- Hamburger Icon (Mobile) -->
-  <div class="md:hidden">
-    <button id="menuToggle" class="focus:outline-none">
-      <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-  </div>
-</nav>
+  <script>
+    // Toggle Mobile Menu
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="md:hidden fixed top-20 left-0 w-full bg-[#ebd8c4] backdrop-blur-md shadow-md hidden z-40">
-  <div class="flex flex-col items-center py-4 space-y-4">
-    <a href="#home1" class="text-black text-lg" onclick="toggleMenu()">Home</a>
-    <a href="#devji1" class="text-black text-lg" onclick="toggleMenu()">Gurudevji</a>
-    <a href="#guest" class="text-black text-lg" onclick="toggleMenu()">Distinguished Guests</a>
-    <a href="#media" class="text-black text-lg" onclick="toggleMenu()">Media</a>
-  </div>
-</div>
+    function toggleMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
 
-<script>
-  // Toggle Mobile Menu
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  function toggleMenu() {
-    mobileMenu.classList.toggle('hidden');
-  }
-
-  menuToggle.addEventListener('click', toggleMenu);
-</script>
+    menuToggle.addEventListener('click', toggleMenu);
+  </script>
 
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center justify-center pt-20 hidden sm:block" id="home">
@@ -140,7 +140,7 @@
         <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
           <a href="#donate"
             class="bg-primary text-white font-semibold px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded shadow-lg hover:shadow-xl transition-all whitespace-nowrap text-base sm:text-lg"
-            style="background-color: red;">
+            style="background-color: #c8252c;;">
             DONATE NOW
           </a>
         </div>
@@ -180,13 +180,13 @@
 
         <h1 class="text-2xl md:text-5xl font-bold mb-2" style="
       color: #c8252c;
-      font-family: 'Poppins', Arial, sans-serif; font-size: 34px;">
+      font-family: 'Poppins', Arial, sans-serif; font-size: 32px;">
           Shankhnad Mahotsav
         </h1>
 
         <!-- 🔹 Orange Line -->
         <div class="mx-auto my-2" style="height: 1px; width: 90%; max-width: 740px; background-color: #fb923c;"></div>
-        <p class="font-medium text-xl md:text-3xl" style="font-weight: bold; color:#283cb1; font-size: 17px; font-family: 'Poppins', Arial, sans-serif; text-shadow: 
+        <p class="font-medium text-xl md:text-3xl" style="font-weight: bold; color:#283cb1; font-size: 15px; font-family: 'Poppins', Arial, sans-serif; text-shadow: 
           -1px -1px 0 #FFD700, 
            1px -1px 0 #FFD700, 
           -1px  1px 0 #FFD700, 
@@ -195,15 +195,12 @@
           17<sup>th</sup> to 19<sup>th</sup> May 2025 | Farmagudi, Ponda, Goa
         </p>
         <div class="mx-auto my-4" style="height: 1px; width: 90%; max-width: 750px; background-color: #fb923c;"></div>
-<br>
-    <!-- 🔹 Button -->
-<div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-  <a href="#donate"
-    class="inline-block bg-primary text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded shadow-lg hover:shadow-xl transition-all whitespace-nowrap text-lg"
-    style="background-color: red; width:170px; min-width:60px; text-align: center; margin-left: 130px;">
-    DONATE NOW
-  </a>
-</div>
+        <br>
+        <!-- 🔹 Button -->
+        <a href="https://donate.sanatanrashtrashankhnad.in/"
+          class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
+          DONATE NOW
+        </a>
       </div>
     </div>
   </section>
@@ -281,10 +278,11 @@
 
   <!-- Mobile View -->
   <!-- Mobile View -->
-  <div class="w-full py-8 px-4 bg-[#ffead5] text-center sm:hidden" >
+  <div class="w-full py-8 px-4 bg-[#ffead5] text-center sm:hidden">
     <!-- Main Heading -->
     <h1 class="text-[#f04f23] mb-4"
-      style="font-size: 1.5rem; font-weight: bold; font-family: 'Poppins', Arial, sans-serif; line-height: 1.3;" id="devji1">
+      style="font-size: 1.5rem; font-weight: bold; font-family: 'Poppins', Arial, sans-serif; line-height: 1.3;"
+      id="devji1">
       A once-in-a-lifetime spiritual awakening.
     </h1>
 
@@ -331,7 +329,7 @@
             will continue for close to 1000 years.
           </p>
           <p class="text-right text-xs"
-            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif; margin-right: 45px;">
+            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
             Sachchidananda Parabrahman Dr Athavale, 1998
           </p>
         </div>
@@ -344,7 +342,7 @@
             this transition to Ram Rajya.
           </p>
           <p class="text-right text-xs"
-            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;  margin-right: 45px;">
+            style="font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
             Sachchidananda Parabrahman Dr Athavale, 2021
           </p>
         </div>
@@ -666,17 +664,17 @@
         seekers gather to witness a powerful declaration of Dharma that will
         echo across India.
       </p>
-      <button
-        class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
-        DONATE NOW
-      </button>
+      <a href="https://donate.sanatanrashtrashankhnad.in/"
+   class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
+   DONATE NOW
+</a>
     </div>
   </section>
   <!-- Saints and Distinguished Guests Section -->
   <section class="py-16 px-4 bg-[#ffead5]" id="guest">
     <div class="max-w-6xl mx-auto">
       <h2 class="font-bold text-center mb-8 hidden sm:block"
-        style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
+        style=" font-size: 2.8rem; font-weight: bold; color: #cc333a; font-family: 'Poppins', Arial, sans-serif;"
         id="guest">
         Saints and Distinguished guests<br> attending the event
       </h2>
@@ -899,13 +897,14 @@
 
     <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
       <p class="text-white text-xl md:text-2xl leading-relaxed mb-8"
-        style=" font-size: 1.4rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
-        <br>This Mahotsav is not just an event<br>it’s a turning point for the Nation and Dharma.
+        style=" font-size: 1.3rem; font-weight: bold; color: #0065b3; font-family: 'Poppins', Arial, sans-serif;">
+        <br>This Mahotsav is not just an event it’s a turning point for the Nation and Dharma.
 
       </p>
-      <button
-        class="bg-secondary hover:bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300"
-        style="background-color: red;">DONATE NOW</button>
+     <a href="https://donate.sanatanrashtrashankhnad.in/"
+   class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
+   DONATE NOW
+</a>
     </div>
   </section>
 
@@ -1074,7 +1073,10 @@
     <div class="max-w-6xl mx-auto">
       <p style=" font-size: 1.6rem; font-weight: bold; color: #ecedee; font-family: 'Poppins', Arial, sans-serif;">Be
         there - Support Dharma - Leave a legacy</p><br>
-      <button class="bg-red-600 text-white px-6 py-3 font-bold !rounded-button whitespace-nowrap">DONATE NOW</button>
+      <a href="https://donate.sanatanrashtrashankhnad.in/"
+   class="bg-red-600 text-white font-bold py-3 px-8 !rounded-button text-lg whitespace-nowrap transition duration-300">
+   DONATE NOW
+</a>
     </div>
   </footer>
 
@@ -1083,15 +1085,15 @@
   <section id="donate" class="py-20 bg-[#ffead5]">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        
+
         <h2 class="font-bold text-center mb-8 hidden sm:block"
-        style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
-        Contribute to this event with your donation
-      </h2>
-      <h2 class="font-bold text-center mb-8 block sm:hidden"
-    style="font-size:1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
-    Contribute to this event with your donation
-</h2>
+          style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+          Contribute to this event with your donation
+        </h2>
+        <h2 class="font-bold text-center mb-8 block sm:hidden"
+          style="font-size:1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+          Contribute to this event with your donation
+        </h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -1300,7 +1302,7 @@
       </div>
     </div>
   </section>
-  
+
 
 
 
@@ -1313,62 +1315,74 @@
           <h2 class="text-2xl font-bold text-[#c8252c]" style="font-family: 'Poppins', Arial, sans-serif;">
             About Sanatan Sanstha, the Organiser of the Sanatan Rashtra Shankhnad Mahotsav
           </h2>
-          <svg id="icon-section1" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg id="icon-section1" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
-    
+
         <div id="section1" class="mt-6 hidden">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-6">
             <!-- Image Left -->
             <div class="rounded-2xl overflow-hidden">
-              <img src="photos/IMAGES-15.png" alt="Sanatan Sanstha" class="w-80 h-auto object-cover object-top rounded-2xl" />
+              <img src="photos/IMAGES-15.png" alt="Sanatan Sanstha"
+                class="w-80 h-auto object-cover object-top rounded-2xl" />
             </div>
             <!-- Text Right -->
             <div>
               <p class="text-lg font-semibold text-[#111111]" style="font-family: 'Poppins', Arial, sans-serif;">
-                To facilitate the establishment of Sanatan Rashtra (Ram Rajya) on Earth, Sachchidananda Parabrahman Dr Athavale created the platform of Sanatan Sanstha (rooted in Sanatan Dharma) to prepare society to herald in this Divine era. 
-                For over 25 years, Sachchidananda Parabrahman Dr Athavale has been guiding society, nurturing seekers and leading spiritual initiatives across Bharat. 
-                Those who wanted to grow spiritually were provided with clear principles and guidelines to nurture their spiritual journey. 
-                Every effort was made to assist them in their spiritual growth. 
-                In response to the present challenges confronting Bharat and with a clear vision for the protection and propagation of Sanatan Dharma for future generations, 
-                Sachchidananda Parabrahman Dr Athavale strengthened the bond and unity between different organisations working for Sanatan Dharma.
+                To facilitate the establishment of Sanatan Rashtra (Ram Rajya) on Earth, Sachchidananda Parabrahman Dr
+                Athavale created the platform of Sanatan Sanstha (rooted in Sanatan Dharma) to prepare society to herald
+                in this Divine era.
+                For over 25 years, Sachchidananda Parabrahman Dr Athavale has been guiding society, nurturing seekers
+                and leading spiritual initiatives across Bharat.
+                Those who wanted to grow spiritually were provided with clear principles and guidelines to nurture their
+                spiritual journey.
+                Every effort was made to assist them in their spiritual growth.
+                In response to the present challenges confronting Bharat and with a clear vision for the protection and
+                propagation of Sanatan Dharma for future generations,
+                Sachchidananda Parabrahman Dr Athavale strengthened the bond and unity between different organisations
+                working for Sanatan Dharma.
               </p>
             </div>
           </div>
         </div>
       </div>
-    
+
       <!-- Section 2 -->
       <div class="border-t border-b border-gray-300 py-6 mb-4">
         <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('section2')">
           <h2 class="text-2xl font-bold text-[#c8252c]" style="font-family: 'Poppins', Arial, sans-serif;">
             The Significance of the Name of the event- Why Shankhnad?
           </h2>
-          <svg id="icon-section2" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg id="icon-section2" class="h-8 w-8 text-[#c8252c] transition-transform duration-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
-    
+
         <div id="section2" class="mt-6 hidden">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-6">
             <!-- Text Left -->
             <div>
               <p class="text-lg font-semibold text-[#111111]" style="font-family: 'Poppins', Arial, sans-serif;">
-                In our scriptures, 'Shankhnad' (blowing of the conch) symbolizes valor and auspicious beginnings. 
-                Hence, blowing the conch of Sanatan Rashtra Shankhnad Mahotsav signifies that the mission behind it will be an essential stepping stone towards societal unity and harmony. 
-                It will be like a trumpet call that will resonate in schools, it heralds unity amongst Hindu sects, cultural revival, and the protection of Sanatan Dharma for future generations.
+                In our scriptures, 'Shankhnad' (blowing of the conch) symbolizes valor and auspicious beginnings.
+                Hence, blowing the conch of Sanatan Rashtra Shankhnad Mahotsav signifies that the mission behind it will
+                be an essential stepping stone towards societal unity and harmony.
+                It will be like a trumpet call that will resonate in schools, it heralds unity amongst Hindu sects,
+                cultural revival, and the protection of Sanatan Dharma for future generations.
               </p>
             </div>
             <!-- Image Right -->
             <div class="rounded-2xl overflow-hidden">
-              <img src="photos/IMAGES-16.png" alt="Shankhnad significance" class="w-80 h-auto object-cover object-top rounded-2xl" />
+              <img src="photos/IMAGES-16.png" alt="Shankhnad significance"
+                class="w-80 h-auto object-cover object-top rounded-2xl" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
 
     <h2 class="text-4xl font-bold mb-4 text-center block sm:hidden"
       style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
@@ -1376,10 +1390,10 @@
       Media Gallery
     </h2>
     <h2 class="text-4xl font-bold mb-4 text-center hidden sm:block"
-    style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
-    id="media1">
-    Media Gallery
-  </h2>
+      style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;"
+      id="media1">
+      Media Gallery
+    </h2>
 
     <!-- Gallery Wrapper -->
     <div class="relative text-center">
@@ -1560,27 +1574,31 @@
     <div class="container mx-auto px-4 sm:px-6">
       <div class="text-center mb-6">
         <!-- Desktop Heading -->
-        <h2 class="hidden sm:block text-2xl sm:text-4xl font-bold mb-4" style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+        <h2 class="hidden sm:block text-2xl sm:text-4xl font-bold mb-4"
+          style=" font-size: 2.8rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
           Event Location and Details
         </h2>
         <!-- Mobile Heading -->
-        <h2 class="block sm:hidden text-xl font-bold mb-4"  style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
+        <h2 class="block sm:hidden text-xl font-bold mb-4"
+          style=" font-size: 1.5rem; font-weight: bold; color: #c8252c; font-family: 'Poppins', Arial, sans-serif;">
           Event Location and Details
         </h2>
       </div>
-  
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <!-- Venue Details -->
         <div class="bg-white p-6 rounded-lg">
-  
+
           <!-- Venue Title -->
-          <h3 class="block sm:hidden text-xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+          <h3 class="block sm:hidden text-xl font-bold mb-4"
+            style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
             Venue Details
           </h3>
-          <h3 class="hidden sm:block text-2xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+          <h3 class="hidden sm:block text-2xl font-bold mb-4"
+            style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
             Venue Details
           </h3>
-  
+
           <div class="space-y-6">
             <!-- Location -->
             <div class="flex items-start">
@@ -1591,12 +1609,13 @@
                 <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                   Infinity Ground Goa Engineering College
                 </h4>
-                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                <p class="text-gray-600 text-base font-semibold"
+                  style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
                   Farmagudi, Ponda, Goa, 403401 - India
                 </p>
               </div>
             </div>
-  
+
             <!-- Dates -->
             <div class="flex items-start">
               <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
@@ -1606,12 +1625,13 @@
                 <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                   Event Dates
                 </h4>
-                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                <p class="text-gray-600 text-base font-semibold"
+                  style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
                   May 17-19, 2025
                 </p>
               </div>
             </div>
-  
+
             <!-- Timings -->
             <div class="flex items-start">
               <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
@@ -1621,22 +1641,26 @@
                 <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                   Daily Timings
                 </h4>
-                <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
-                  5:00 AM to 9:00 PM
+                <p class="text-gray-600 text-base font-semibold"
+                  style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  10:00 AM to 12:30 PM<br>
+                  03:00 AM to 08:00 PM
                 </p>
               </div>
             </div>
           </div>
-  
+
           <!-- Transportation -->
           <div class="mt-8">
-            <h3 class="hidden sm:block text-2xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+            <h3 class="hidden sm:block text-2xl font-bold mb-4"
+              style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
               Transportation
             </h3>
-            <h3 class="block sm:hidden text-xl font-bold mb-4" style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
+            <h3 class="block sm:hidden text-xl font-bold mb-4"
+              style="color: #f08409; font-family: 'Poppins', Arial, sans-serif;">
               Transportation
             </h3>
-  
+
             <div class="space-y-6">
               <!-- Airport -->
               <div class="flex items-start">
@@ -1647,12 +1671,13 @@
                   <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                     Nearest Airport
                   </h4>
-                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  <p class="text-gray-600 text-base font-semibold"
+                    style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
                     Goa International Airport (30 km)
                   </p>
                 </div>
               </div>
-  
+
               <!-- Railway -->
               <div class="flex items-start">
                 <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
@@ -1662,12 +1687,13 @@
                   <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                     Nearest Railway Station
                   </h4>
-                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  <p class="text-gray-600 text-base font-semibold"
+                    style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
                     Madgaon Railway Station (15 km)
                   </p>
                 </div>
               </div>
-  
+
               <!-- Shuttle -->
               <div class="flex items-start">
                 <div class="w-8 h-8 flex items-center justify-center text-primary mt-1 mr-3">
@@ -1677,7 +1703,8 @@
                   <h4 class="font-semibold text-lg" style="color: #0e0d0d; font-family: 'Poppins', Arial, sans-serif;">
                     Shuttle Services
                   </h4>
-                  <p class="text-gray-600 text-base font-semibold" style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
+                  <p class="text-gray-600 text-base font-semibold"
+                    style="color: #555453; font-family: 'Poppins', Arial, sans-serif;">
                     Free shuttle services from major hotels and transport hubs
                   </p>
                 </div>
@@ -1685,19 +1712,21 @@
             </div>
           </div>
         </div>
-  
+
         <!-- Map -->
         <div class="h-80 sm:h-96 rounded-lg overflow-hidden">
           <div class="map-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4281.745764099459!2d73.9807991!3d15.4273476!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bbfbbaade5db3ed%3A0xa05fcb6da72b73f7!2sInfinity%20Ground%20CXGJ%2BW8M%20Veling%2C%20Goa%20403404!3m2!1d15.4273476!2d73.9807991!5e1!3m2!1sen!2sin!4v1746437926148!5m2!1sen!2sin"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4281.745764099459!2d73.9807991!3d15.4273476!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bbfbbaade5db3ed%3A0xa05fcb6da72b73f7!2sInfinity%20Ground%20CXGJ%2BW8M%20Veling%2C%20Goa%20403404!3m2!1d15.4273476!2d73.9807991!5e1!3m2!1sen!2sin!4v1746437926148!5m2!1sen!2sin"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+
 
 
   <!-- Footer conatct-->
@@ -1740,7 +1769,7 @@
     </div>
   </footer>
 
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggleButtons = document.querySelectorAll(".section-toggle");
